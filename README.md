@@ -9,7 +9,7 @@ I recommend to build a camera tripod for the Pi-Cam (For example with a 3D print
 When you connect the camera to the Pi, make sure the cable is facing the right direction. Otherwise you will not get a picture.
 
 # Software
-First, you have to enable the camera port on the Raspberry Pi. There are a lot of tutorials out there so i will not go into detail about this step. Next, we have to install the required tools and libaries for my code. You can simply copy and paste the following lines of code. Then execute them. There should be no errors: <br>
+First, you have to enable the camera port on the Raspberry Pi. There are a lot of tutorials out there so I will not go into detail about this step. Next, we have to install the required tools and libaries for my code. You can simply copy and paste the following lines of code. Then execute them. There should be no errors: <br>
 
 sudo apt-get update<br>
 sudo apt-get install python3 python3-pip libzbar0<br>
