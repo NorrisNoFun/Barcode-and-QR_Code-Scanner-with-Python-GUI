@@ -69,4 +69,4 @@ btn_infos.place(x=20, y=100)
 info_Label = Label(window, text="Informationen des QR-Codes \n werden hier angezeigt")
 info_Label.place(x=800, y=50, width=400, height=200)
 
-window.mainloop()
+window.mainloop() #loop for the GUI
