@@ -18,3 +18,12 @@ sudo apt-get install libcblas-dev libhdf5-dev libhdf5-serial-dev libatlas-base-d
 jasper-dev libqtgui4 libqt4-test<br>
 
 If you are using an older version of Python, please delete it. These will cause problems later when displaying the image in the GUI if they are not deleted
+Now, your Pi is ready for the first scan. Simply execute the code.
+
+# How the program works
+When you run the code, the GUI will open. You will have two buttons. One to take a picture of the code and another to display the information of the code. These are then shown in the label. The taken image of the QR-Code will also be displayed. 
+
+# Possible upgrades of the project
+-create another button so that you can open the link of a QR code directly<br>
+-to get a better camera: Until now, it is only possible to read QR codes. This is because the Raspberry Pi Camera V2 is still not good enough to take clear pictures of a barcode. The lines are simply too blurry to be read by the program. The libraries used are capable of reading barcodes. You can change the path to a downloaded image of a barcode. You will see that then the information can be read. 
+
