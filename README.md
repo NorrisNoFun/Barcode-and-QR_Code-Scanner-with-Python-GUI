@@ -1,5 +1,5 @@
-# Barcode-scanner-with-Python-GUI
-This is a project to be able to scan QR-Codes with the camera of the Raspberry Pi. The Information will then be displayed on a GUI
+# Barcode scanner with Python GUI
+This is a project to scan QR-Codes with the camera of the Raspberry Pi. The Information of the QR-Code will then be displayed on a GUI.
 
 # Hardware
 All you need is is listed below:<br>
@@ -26,4 +26,9 @@ When you run the code, the GUI will open. You will have two buttons. One to take
 # Possible upgrades of the project
 -create another button so that you can open the link of a QR code directly<br>
 -get a better camera: Until now, it is only possible to read QR codes. This is because the Raspberry Pi Camera V2 is still not good enough to take clear pictures of a barcode. The lines are simply too blurry to be read by the program. The libraries used are capable of reading barcodes. You can change the path to a downloaded image of a barcode. You will see that then the information can be read. 
+
+# Sources
+Since this is a school project I looked up how to set up such scanner. Below you will find the link I used:<br>
+-https://tutorials-raspberrypi.de/raspberry-pi-barcode-scanner-qr-mit-kamera-selber-bauen/
+
 

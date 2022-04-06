@@ -1,8 +1,8 @@
-from tkinter import *
-from PIL import ImageTk, Image
-from picamera import PiCamera
-import cv2
-from pyzbar import pyzbar
+from tkinter import *  # Library building an GUI with tkinter
+from PIL import ImageTk, Image  # Library to process the images made by the camera
+from picamera import PiCamera  # Library for using the Camera of the Pi
+import cv2 # Library for the scanner
+from pyzbar import pyzbar  # Library for the scanner
 
 camera = PiCamera()  # creating an object to use the Camera
 path = "QRC.png"  # here you can specify where the image of the scan will be saved.
@@ -23,7 +23,7 @@ def picture_and_scan():  # Function to take a picture of the QR code and analyze
     try:  # Checking whether information could be extracted from the captured image
 
         if link != "":
-            print("something found")
+            print("something found")  # control-command for the shell
         else:
             pass
     except:  # This part is executed when no information is found
@@ -36,17 +36,18 @@ def picture_and_scan():  # Function to take a picture of the QR code and analyze
 
 def show_qrc():  # Function for a button to display the information found in the scan
     global link, typ, rect, poly
-    img = Image.open(path)
+    img = Image.open(path)  # creating a variable with the scan image
 
-    img = img.resize((550, 420))
-    img = ImageTk.PhotoImage(img)
+    img = img.resize((550, 420))  # scaling the image
+    img = ImageTk.PhotoImage(img)  # adapt the image for the GUI
 
-    picture_label.config(image=img)
+    picture_label.config(image=img)  # creating a label for the image
     picture_label.image = img
     info_Label.configure(text=str(link) + "\n" + str(typ) + "\n" + str(rect) + "\n" + str(poly))
 
 
-window = Tk()  # All below: Definition of the GUI-Window
+# All below: Definition of the GUI-Window
+window = Tk()
 window.geometry("1200x800+200+200")
 window.configure(bg="grey")
 window.title("Barcode-Scanner")
@@ -69,4 +70,4 @@ btn_infos.place(x=20, y=100)
 info_Label = Label(window, text="Informationen des QR-Codes \n werden hier angezeigt")
 info_Label.place(x=800, y=50, width=400, height=200)
 
-window.mainloop() #loop for the GUI
+window.mainloop()  # loop for the GUI
